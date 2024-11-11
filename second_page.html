@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Additional Details</h2>
+        <form method="POST">
+            <label for="year">Year</label>
+            <input type="number" id="year" name="year" readonly required>
+            
+            <label for="month">Month</label>
+            <input type="number" id="month" name="month" readonly required>
+            
+            <label for="day">Day</label>
+            <input type="number" id="day" name="day" readonly required>
+            
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" placeholder="Price" required>
+            
+            <label for="downpmt">Down Payment</label>
+            <input type="number" id="downpmt" name="downpmt" placeholder="Down Payment" required>
+            
+            <label for="monthdue">Months Due</label>
+            <input type="number" id="monthdue" name="monthdue" placeholder="Months Due" required>
+            
+            <label for="payment_left">Payment Left</label>
+            <input type="number" id="payment_left" name="payment_left" placeholder="Payment Left" required>
+            
+            <label for="monthly_payment">Monthly Payment</label>
+            <input type="number" id="monthly_payment" name="monthly_payment" placeholder="Monthly Payment" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to set current date values
+        window.onload = function() {
+            const today = new Date();
+            document.getElementById('year').value = today.getFullYear();
+            document.getElementById('month').value = today.getMonth() + 1; // Months are 0-indexed
+            document.getElementById('day').value = today.getDate();
+        };
+    </script>
+</body>
+</html>
