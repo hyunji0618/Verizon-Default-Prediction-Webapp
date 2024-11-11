@@ -4,13 +4,10 @@ This project is a Flask-based web application for predicting the default probabi
 
 ## Table of Contents
 - [Overview](#overview)
-- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
 
 ## Overview
 The application collects input data in two steps:
@@ -19,14 +16,16 @@ The application collects input data in two steps:
 
 The collected data is then fed into an XGBoost model to predict the default probability, which is displayed on the result page.
 
-## Features
-- **Simple and User-Friendly Forms**: Collect user inputs in two steps.
-- **Prediction Using XGBoost**: Uses a trained XGBoost model to calculate the probability of default.
-- **Responsive Design**: Clean and organized UI with a consistent design using HTML and CSS.
-- **Easy Deployment**: The app is ready to be deployed on platforms like Heroku, AWS, or Google Cloud.
-
 ## Technologies Used
 - **Flask**: A lightweight WSGI web application framework in Python.
 - **XGBoost**: A powerful and efficient gradient boosting framework.
 - **HTML/CSS**: For creating a responsive and clean user interface.
 - **Pandas**: For data handling and manipulation.
+
+## Usage
+1. Navigate to the first page and fill in your personal details.
+2. Proceed to the second page to enter financial details.
+3. Submit the form to see the default probability prediction.
+
+## Folder Structure
+/your-project-folder │ ├── app.py ├── xgboost_model.py ├── Verizon Data.csv ├── requirements.txt ├── Procfile ├── /templates │ ├── first_page.html │ ├── second_page.html │ └── result.html └── /static └── styles.css
