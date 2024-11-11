@@ -7,7 +7,6 @@ This project is a Flask-based web application for predicting the default probabi
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
 
 ## Overview
 The application collects input data in two steps:
@@ -26,6 +25,3 @@ The collected data is then fed into an XGBoost model to predict the default prob
 1. Navigate to the first page and fill in your personal details.
 2. Proceed to the second page to enter financial details.
 3. Submit the form to see the default probability prediction.
-
-## Folder Structure
-/your-project-folder │ ├── app.py ├── xgboost_model.py ├── Verizon Data.csv ├── requirements.txt ├── Procfile ├── /templates │ ├── first_page.html │ ├── second_page.html │ └── result.html └── /static └── styles.css
