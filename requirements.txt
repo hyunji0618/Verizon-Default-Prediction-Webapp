@@ -8,9 +8,7 @@ gast==0.6.0
 google-pasta==0.2.0
 grpcio==1.66.2
 jsonpointer==2.1
-keras==3.6.0
 libclang==18.1.1
-matplotlib==3.9.2
 ml-dtypes==0.4.1
 mlxtend==0.23.2
 namex==0.0.8
