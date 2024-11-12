@@ -16,8 +16,8 @@ The application collects input data in two steps:
 The collected data is then fed into an XGBoost model to predict the default probability, which is displayed on the result page.
 
 ## Technologies Used
-- **Flask**: A lightweight WSGI web application framework in Python.
-- **XGBoost**: A powerful and efficient gradient boosting framework.
+- **Flask**: A lightweight web application framework in Python.
+- **XGBoost**: An efficient machine learning gradient boosting framework.
 - **HTML/CSS**: For creating a responsive and clean user interface.
 - **Pandas**: For data handling and manipulation.
 
@@ -25,3 +25,5 @@ The collected data is then fed into an XGBoost model to predict the default prob
 1. Navigate to the first page and fill in your personal details.
 2. Proceed to the second page to enter financial details.
 3. Submit the form to see the default probability prediction.
+
+
