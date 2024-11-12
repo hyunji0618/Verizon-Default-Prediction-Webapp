@@ -57,7 +57,7 @@ def second_page():
 
         # Predict using the XGBoost model
         y_pred = bst.predict(dmatrix)[0]
-        probability = round(y_pred * 100, 4)
+        probability = round(y_pred, 4) * 100
 
         return render_template('result.html', probability=probability)
     return render_template('second_page.html')
