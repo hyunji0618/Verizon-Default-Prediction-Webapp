@@ -54,14 +54,14 @@ def second_page():
 
         # Predict using the XGBoost model
         y_pred = bst.predict(dmatrix)[0]
-        probability = round(y_pred, 4) * 100
+        probability = round(y_pred * 100, 4)
 
         return render_template('result.html', probability=probability)
     return render_template('second_page.html')
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
-
 #if __name__ == '__main__':
-#    app.run(debug=True)
+#    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
+if __name__ == '__main__':
+    app.run(debug=True)
 

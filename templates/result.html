@@ -26,7 +26,10 @@
     <div class="container result-container">
         <h2>Prediction Result</h2>
         <p class="result-message">Default Probability:</p>
-        <p class="probability">{{ probability }}%</p>
+        <p class="probability">{{ probability }}%</p><br>
+        <form action="{{ url_for('first_page') }}" method="get">
+            <button type="submit">Return</button>
+        </form>
     </div>
 </body>
 </html>
