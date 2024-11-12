@@ -1,14 +1,10 @@
 absl-py==2.1.0
 appdirs==1.4.4
 astunparse==1.6.3
-grpcio==1.66.2
 jsonpointer==2.1
 mlxtend==0.23.2
 protobuf==3.20.3
 pyasn1-modules==0.2.8
-PyMySQL==1.1.1
-PyQt5==5.15.10
-PyQtWebEngine==5.15.6
 scikit-plot==0.3.7
 scipy==1.11.4
 setuptools==75.1.0

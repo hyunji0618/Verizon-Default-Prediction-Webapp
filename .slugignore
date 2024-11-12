@@ -5,7 +5,12 @@
 *.mkv
 *.zip
 __pycache__/
-.venv/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+*.tar.gz
 node_modules/
-docs/
 tests/
+docs/
