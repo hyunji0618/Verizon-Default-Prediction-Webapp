@@ -2,33 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <title>Credit Decision Result</title>
     <style>
-        .result-container {
-            text-align: center;
-            padding: 20px;
-        }
-        .result-message {
-            font-size: 18px;
-            margin-bottom: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .probability {
-            font-size: 24px;
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            max-width: 400px;
+            text-align: center;
+        }
+        .heading {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .decision {
+            font-size: 1.5em;
             font-weight: bold;
-            color: #4CAF50;
+            color: #006400; /* Green color for "approve" */
+        }
+        .decision.reject {
+            color: #B22222; /* Red color for "reject" */
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="container result-container">
-        <h2>Prediction Result</h2>
-        <p class="result-message">Default Probability:</p>
-        <p class="probability">{{ probability }}%</p><br>
+    <div class="container">
+        <h1 class="heading">Prediction Result</h1>
+        <p class="message">
+            Based on our analysis, the credit decision is:
+        </p>
+        {% if y_pred_class == 1 %}
+            <p class="decision reject">Default, Reject</p>
+        {% else %}
+            <p class="decision">Not Default, Approve</p>
+        {% endif %}
         <form action="{{ url_for('first_page') }}" method="get">
-            <button type="submit">Return</button>
+            <button type="submit">Return to First Page</button>
         </form>
     </div>
 </body>
