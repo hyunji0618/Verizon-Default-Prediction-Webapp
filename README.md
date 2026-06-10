@@ -1,4 +1,4 @@
-# Verizon Customer Default Prediction & Contract Decisioning App
+# Verizon Customer Default Prediction & Contract Decisioning Web Application
 
 A machine learning project that predicts customer default risk and translates model outputs into contract approval decisions and estimated financial impact. The project was designed as a data-driven decision support tool for Verizon staff to assess whether a customer should be approved for a phone contract during live customer interactions.
 
