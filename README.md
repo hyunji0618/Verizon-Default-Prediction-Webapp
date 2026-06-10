@@ -126,15 +126,10 @@ Proposed workflow:
 3. The model returns an instant default risk prediction
 4. Staff uses the prediction to support contract approval or denial decisions
 
-Future enhancement:
-
-* Add a sliding-scale offer recommendation based on credit score and predicted risk
-* Support differentiated contract terms instead of only approve/reject outcomes
-
 ## Demo
 
 ### App Demo Video
 
 ```markdown
-[https://github.com/user-attachments/assets/YOUR_VIDEO_ID](https://github.com/hyunji0618/Verizon-Default-Prediction-Webapp/blob/main/App%20Demo.mov)
+https://github.com/user-attachments/assets/85731afb-19ce-47cf-ad2c-40806c2eda4f
 ```
