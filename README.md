@@ -130,6 +130,6 @@ Proposed workflow:
 
 ### App Demo Video
 
-```markdown
-https://github.com/user-attachments/assets/85731afb-19ce-47cf-ad2c-40806c2eda4f
-```
+https://github.com/user-attachments/assets/7be8ee3e-71da-400a-b679-1e2ff52f08bf
+
+
